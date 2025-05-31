@@ -84,7 +84,6 @@ public class ManejadorGlobalExcepciones extends ResponseEntityExceptionHandler {
 
         return new ResponseEntity<>(detallesErrorValidacion, HttpStatus.BAD_REQUEST);
     }
-
     // Clases de respuesta de error
     public record DetallesError(
             LocalDateTime timestamp,

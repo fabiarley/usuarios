@@ -1,7 +1,7 @@
 package com.prueba.usuarios.service.impl;
 
 import com.prueba.usuarios.dto.UsuarioDTO;
-import com.prueba.usuarios.dto.UsuarioUpdateDTO;
+import com.prueba.usuarios.dto.UsuarioUpdatesDTO;
 import com.prueba.usuarios.exception.EmailYaExisteException;
 import com.prueba.usuarios.exception.RecursoNoEncontradoException;
 import com.prueba.usuarios.model.Usuario;
@@ -85,7 +85,7 @@ public class UsuarioServiceImpl implements UsuarioService {
 
     @Override
     @Transactional
-    public UsuarioDTO actualizarParcialmenteUsuario(Integer id, UsuarioUpdateDTO usuarioUpdateDTO) {
+    public UsuarioDTO actualizarParcialmenteUsuario(Integer id, UsuarioUpdatesDTO usuarioUpdateDTO) {
         Usuario usuario = usuarioRepository.findById(id)
                 .orElseThrow(() -> new RecursoNoEncontradoException("Usuario no encontrado con id: " + id));
 

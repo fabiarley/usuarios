@@ -1,7 +1,7 @@
 package com.prueba.usuarios.service;
 
 import com.prueba.usuarios.dto.UsuarioDTO;
-import com.prueba.usuarios.dto.UsuarioUpdateDTO;
+import com.prueba.usuarios.dto.UsuarioUpdatesDTO;
 import com.prueba.usuarios.exception.EmailYaExisteException;
 import com.prueba.usuarios.exception.RecursoNoEncontradoException;
 import com.prueba.usuarios.model.Usuario;
@@ -37,7 +37,7 @@ class UsuarioServiceTest {
 
     private Usuario usuario;
     private UsuarioDTO usuarioDTO;
-    private UsuarioUpdateDTO usuarioUpdateDTO;
+    private UsuarioUpdatesDTO usuarioUpdateDTO;
 
     @BeforeEach
     void setUp() {
@@ -60,7 +60,7 @@ class UsuarioServiceTest {
                 ahora
         );
 
-        usuarioUpdateDTO = new UsuarioUpdateDTO(
+        usuarioUpdateDTO = new UsuarioUpdatesDTO(
                 "Usuario Actualizado",
                 "actualizado@ejemplo.com",
                 "nuevacontrasena123"

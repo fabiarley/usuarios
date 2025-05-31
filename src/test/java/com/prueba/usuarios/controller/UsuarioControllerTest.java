@@ -2,8 +2,7 @@ package com.prueba.usuarios.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.prueba.usuarios.dto.UsuarioDTO;
-import com.prueba.usuarios.dto.UsuarioUpdateDTO;
-import com.prueba.usuarios.exception.EmailYaExisteException;
+import com.prueba.usuarios.dto.UsuarioUpdatesDTO;
 import com.prueba.usuarios.exception.RecursoNoEncontradoException;
 import com.prueba.usuarios.service.UsuarioService;
 import org.junit.jupiter.api.BeforeEach;
@@ -39,7 +38,7 @@ public class UsuarioControllerTest {
     private ObjectMapper objectMapper;
 
     private UsuarioDTO usuarioDTO;
-    private UsuarioUpdateDTO usuarioUpdateDTO;
+    private UsuarioUpdatesDTO usuarioUpdateDTO;
 
     @BeforeEach
     void setUp() {
@@ -54,7 +53,7 @@ public class UsuarioControllerTest {
                 ahora
         );
 
-        usuarioUpdateDTO = new UsuarioUpdateDTO(
+        usuarioUpdateDTO = new UsuarioUpdatesDTO(
                 "Usuario Actualizado",
                 "actualizado@ejemplo.com",
                 "nuevacontrasena123"

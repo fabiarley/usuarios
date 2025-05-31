@@ -27,7 +27,7 @@ public class Usuario {
 
 
     @NotBlank(message = "Email es requerido")
-    @Email(message = "el Email debe ser varido")
+    @Email(message = "el Email debe ser valido")
     @Column(unique = true)
     private String email;
 

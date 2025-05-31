@@ -4,6 +4,8 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Size;
 
+
+
 @Schema(description = "Datos para actualización parcial de un usuario")
 public record UsuarioUpdatesDTO(
         @Schema(description = "Nombre del usuario", example = "Juan Pérez Actualizado")
